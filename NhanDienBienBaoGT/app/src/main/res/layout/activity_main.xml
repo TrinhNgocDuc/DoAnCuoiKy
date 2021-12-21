@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_androi4">
+
+
+    <TextView
+        android:id="@+id/textViewLabel"
+        android:layout_width="341dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Label"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@id/imageView"
+        android:layout_width="349dp"
+        android:layout_height="258dp"
+        android:background="#FFFFFF"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLabel">
+
+        <ImageView
+            android:id="@+id/imageView_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSelect"
+        android:layout_width="102dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#FD5770"
+        android:text="@string/select"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/buttonPredict"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FD5770"
+        android:text="@string/predict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPhoto" />
+
+    <Button
+        android:id="@+id/buttonPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#FD5770"
+        android:text="@string/takePhoto"
+        app:layout_constraintStart_toEndOf="@+id/buttonSelect"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/buttonLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#FD5770"
+        android:text="@string/Live"
+        app:layout_constraintStart_toEndOf="@+id/buttonPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
